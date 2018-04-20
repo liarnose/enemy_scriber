@@ -1,0 +1,189 @@
+/*フォント 読み込み*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* リセット */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+/* ページ */
+html{
+  font-size: 0.25mm;
+}
+
+body{
+  background: #eee;
+  font-size: 0.25mm;
+  font-weight: 300;
+}
+
+@page {
+  width: 210mm;
+  height: 297mm; 
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+
+  background: #fff;
+} 
+
+@media screen{
+  .page {
+    margin: 50px auto;
+    box-shadow: 5px 5px 5px #666;
+  }
+}
+
+/* 外枠 */
+
+.enemy {
+  margin:25mm;
+  background: #fee;
+  border: 0.25mm solid #422;
+  font: 10rem 'Noto Sans JP';
+  line-height: 1.4;
+}
+
+/* 大ヘッダー */
+
+.enemy_header {
+  display: flex;
+  align-items: center;
+  padding: 1mm;
+  
+  background: #422;
+}
+
+.enemy_name {
+  flex-grow: 1;
+  flex-shrink: 0;
+  font: 900 20rem 'Noto Sans JP';
+  line-height: 1.2;
+  color: #fff;
+}
+
+.enemy_tags {
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+.enemy_tag {
+  background: #fff;
+  border-radius: 0.5mm;
+  margin: 0.5mm;
+  padding: 0 1mm;
+}
+
+/* 小ヘッダー */
+.enemy_small-header{
+  padding: 0 1mm ;
+  font-size: 15rem;
+  
+}
+
+/* ステータス */
+.enemy_stats{
+  margin: 1mm;
+  margin-bottom: 2mm;
+}
+.enemy_stat {
+  display: inline-block;
+  border-bottom: 0.25mm solid #422;
+}
+.enemy_stat h4{
+  display: inline-block;
+  background: #422;
+  color: #fff;
+  text-align: center;
+}
+.enemy_stat span{
+  display: inline-block;
+  text-align: center;
+}
+
+.enemy_stat__s{
+  width: 20mm;
+}
+.enemy_stat__s h4{
+  width: 10mm;
+}
+.enemy_stat__s span{
+  width: 10mm;
+}
+
+.enemy_stat__m{
+  width: 25mm;
+}
+.enemy_stat__m h4{
+  width: 10mm;
+}
+.enemy_stat__m span{
+  width: 15mm;
+}
+
+.enemy_stat__l{
+  width: 25mm;
+}
+.enemy_stat__l h4{
+  width: 15mm;
+}
+.enemy_stat__l span{
+  width: 10mm;
+}
+
+/* テキスト＆特技 */
+.enemy_text ,
+.enemy_skills {
+  padding: 0 1mm ;
+}
+
+.enemy_text ,
+.enemy_skill-stat {
+  margin-bottom: 2mm;
+}
+
+.enemy_skill-name {
+  font-weight: bold;
+}
+
+/* ドロップテーブル */
+
+.enemy_items{
+  width: 80%;
+  margin: 2mm 10%;
+  border: 0.25rem solid #422;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.enemy_items  th{
+  background: #422;
+  color: #fff;
+  font-weight: normal;
+}
+.enemy_items th + th {
+  border-left: 0.25mm solid #fff;
+}
+
+.enemy_items td {
+  background: #fff;
+}
+
+.enemy_items td + td {
+  border-left: 0.25mm solid #422;
+}
