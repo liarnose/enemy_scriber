@@ -19,6 +19,7 @@ table {
 /* ページ */
 html{
   font-size: 0.25mm;
+  font-feature-settings: "palt";
 }
 
 body{
