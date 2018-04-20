@@ -1,7 +1,7 @@
 $(()=>{
   $("#enemy-scriber_start").on("click", ()=>{
     
-    const url = "https://lhrpg.com/lhz/ij/1582.json";
+    const url = "https://lhrpg.com/lhz/ij/" + $("#enemy-scriber_id").val() + ".json";
     var data;
     
     getData(url).done((result)=>{
