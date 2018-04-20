@@ -150,7 +150,7 @@ body{
 /* テキスト＆特技 */
 .enemy_text ,
 .enemy_skills {
-  padding: 0 1mm ;
+  padding: 0 4mm ;
 }
 
 .enemy_text ,
